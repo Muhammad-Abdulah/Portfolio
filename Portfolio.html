@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Abdullah | AI & Machine Learning Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050816;
+color:#fff;
+overflow-x:hidden;
+}
+
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(5,8,22,0.8);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:1.3rem;
+font-weight:700;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#cbd5e1;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#38bdf8;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 20px;
+position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:#38bdf8;
+filter:blur(200px);
+opacity:.15;
+border-radius:50%;
+}
+
+.hero-content{
+max-width:900px;
+z-index:2;
+}
+
+.hero h1{
+font-size:5rem;
+font-weight:800;
+margin-bottom:15px;
+}
+
+.hero h2{
+font-size:2rem;
+color:#38bdf8;
+margin-bottom:25px;
+}
+
+.hero p{
+font-size:1.1rem;
+line-height:1.8;
+color:#94a3b8;
+margin-bottom:35px;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:14px 28px;
+border:none;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.primary{
+background:linear-gradient(90deg,#38bdf8,#8b5cf6);
+color:white;
+}
+
+.secondary{
+border:1px solid #38bdf8;
+color:#38bdf8;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+font-size:2.5rem;
+margin-bottom:50px;
+text-align:center;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.about p{
+line-height:1.9;
+color:#94a3b8;
+font-size:1.05rem;
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#0b1223;
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.05);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#38bdf8;
+}
+
+.card ul{
+list-style:none;
+line-height:2;
+color:#cbd5e1;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.project-card{
+background:#0b1223;
+padding:30px;
+border-radius:20px;
+transition:.3s;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+}
+
+.project-card h3{
+margin-bottom:15px;
+color:#38bdf8;
+}
+
+.project-card p{
+color:#94a3b8;
+line-height:1.7;
+margin-bottom:20px;
+}
+
+.tags{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.tag{
+padding:8px 12px;
+background:#111827;
+border-radius:30px;
+font-size:.85rem;
+}
+
+.timeline{
+max-width:800px;
+margin:auto;
+}
+
+.timeline-item{
+margin-bottom:40px;
+padding-left:25px;
+border-left:3px solid #38bdf8;
+}
+
+.timeline-item h4{
+color:#38bdf8;
+margin-bottom:8px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+color:#cbd5e1;
+}
+
+.contact a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+footer{
+padding:30px;
+text-align:center;
+color:#64748b;
+border-top:1px solid rgba(255,255,255,0.05);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:3rem;
+}
+
+.hero h2{
+font-size:1.4rem;
+}
+
+.nav-links{
+display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+<div class="logo">Muhammad Abdullah</div>
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Muhammad Abdullah</h1>
+
+<h2>AI & Machine Learning Developer</h2>
+
+<p>
+Building intelligent systems through Computer Vision,
+Machine Learning, and Data Analytics.
+Focused on solving real-world problems using modern AI technologies.
+</p>
+
+<div class="buttons">
+<a href="#projects" class="btn primary">View Projects</a>
+<a href="#contact" class="btn secondary">Contact Me</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+
+<p>
+I am a third-year Computer Science student at the University of Lahore,
+specializing in Artificial Intelligence and Machine Learning.
+My interests include Computer Vision, Data Analytics, and AI-powered
+applications. I enjoy building practical solutions that transform
+complex data into meaningful insights and real-world impact.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="skills-grid">
+
+<div class="card">
+<h3>Machine Learning</h3>
+<ul>
+<li>Regression</li>
+<li>Classification</li>
+<li>Model Evaluation</li>
+<li>Feature Engineering</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Computer Vision</h3>
+<ul>
+<li>YOLOv8</li>
+<li>OpenCV</li>
+<li>Object Detection</li>
+<li>Dataset Training</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Data Analytics</h3>
+<ul>
+<li>Pandas</li>
+<li>NumPy</li>
+<li>EDA</li>
+<li>Data Cleaning</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Development</h3>
+<ul>
+<li>Python</li>
+<li>SQL</li>
+<li>Git</li>
+<li>GitHub</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Featured Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>PPE Detection & Safety Alert System</h3>
+<p>
+Real-time workplace safety monitoring system using YOLOv8
+and OpenCV to detect helmets and safety vests while generating alerts.
+</p>
+
+<div class="tags">
+<span class="tag">Python</span>
+<span class="tag">YOLOv8</span>
+<span class="tag">OpenCV</span>
+</div>
+
+</div>
+
+<div class="project-card">
+<h3>House Price Prediction</h3>
+<p>
+Machine learning regression model for predicting housing prices
+using feature engineering and data preprocessing techniques.
+</p>
+
+<div class="tags">
+<span class="tag">Python</span>
+<span class="tag">Pandas</span>
+<span class="tag">Scikit-Learn</span>
+</div>
+
+</div>
+
+<div class="project-card">
+<h3>Retail Sales Analytics</h3>
+<p>
+Comprehensive retail sales analysis project focused on trend discovery,
+data visualization, and business insights generation.
+</p>
+
+<div class="tags">
+<span class="tag">Pandas</span>
+<span class="tag">Matplotlib</span>
+<span class="tag">Seaborn</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Learning Journey</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h4>2023</h4>
+<p>Started BS Computer Science.</p>
+</div>
+
+<div class="timeline-item">
+<h4>2024</h4>
+<p>Built strong foundations in Python programming.</p>
+</div>
+
+<div class="timeline-item">
+<h4>2025</h4>
+<p>Entered Machine Learning and Data Analysis.</p>
+</div>
+
+<div class="timeline-item">
+<h4>2026</h4>
+<p>Developing Computer Vision systems using YOLOv8 and OpenCV.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
+
+<p>📧 011muhammadabdullah@gmail.com</p>
+
+<p>
+💼
+<a href="https://www.linkedin.com/in/muhammad-abdullah-ai-ml/" target="_blank">
+LinkedIn
+</a>
+</p>
+
+<p>
+💻
+<a href="https://github.com/Muhammad-Abdulah" target="_blank">
+GitHub
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Muhammad Abdullah • AI & Machine Learning Developer
+</footer>
+
+</body>
+</html>
